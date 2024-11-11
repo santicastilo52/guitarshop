@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guitar Shop</title>
+</head>
+<body onload="mostrarProductos(), mostrarAccesorios(), mostrarPromociones()">
+    <header id="header">
+        <div id="logo-img">
+            <a href="index.html"><img src="./img/guitarlogo.png" alt="logoguitar" id="header-img"></a>
+        </div>
+        <nav id="nav-bar">
+            <ul id="ul-nav">
+                <li><a href="index.html#bienvenida" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#promociones" class="nav-link">Promociones</a></li>
+                <li><a href="index.html#catalogo" class="nav-link">Productos</a></li>
+                <li><a href="index.html#accesorios" class="nav-link">Accesorios</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="quienes-somos.html" class="nav-link">¿Quienes somos?</a></li>
+            </ul>
+        </nav>
+        <div id="carrito">
+            <img src="img/car.svg" id="img-carrito" alt="carrito">
+        </div>
+    </header>
+    <section id="contacto">
+        <h1>Contactanos en nuestras redes</h1>
+            <div class="contenedor-contactos">
+                <ul id="ul-contactos">
+                    <li id="contactos">
+                        <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook" id="icon-con"></ion-icon></a>
+                    </li>
+                    <li id="contactos">
+                        <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram" id="icon-con"></ion-icon></a>
+                    </li>
+                    <li id="contactos">
+                        <a href="https://www.twitter.com/" target="_blank"><ion-icon name="logo-twitter" id="icon-con"></ion-icon></a>
+                    </li>
+                    <li id="contactos">
+                        <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube" id="icon-con"></ion-icon></a>
+                    </li>
+                </ul>
+                <h3 id="h3-contacto">guitarshop@gmail.com</h3>
+        </div>
+    </section>
+     <!--modal-->
+     <div class="modal-overlay" id="modal-overlay"></div>
+     <div class="modal-container" id="modal-container"></div>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="link">
+                <h3>Info</h3>
+                    <ul id="ul-footer">
+                        <li id="li-footer"><a href="quienes-somos.html">¿Quienes somos?</a></li>
+                        <li id="li-footer"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+            </div>
+            <div class="link">
+                <h3>Sucursales</h3>
+                    <ul>
+                        <li id="li-footer">Buenos Aires</li>
+                        <li id="li-footer">Córdoba</li>
+                        <li id="li-footer">Mendoza</li>
+                        <li id="li-footer">Salta</li>
+                    </ul>
+            </div>
+            <div class="link">
+                <h3>Seguinos</h3>
+                    <ul>
+                        <li id="li-footer">
+                            <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        </li>
+                        <li id="li-footer">
+                            <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        </li>
+                        <li id="li-footer">
+                            <a href="https://www.twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                        </li>
+                        <li id="li-footer">
+                            <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                        </li>
+                    </ul>
+            </div>
+        </div> 
+    </footer>
+    <script src="js/guitarras.js"></script>
+    <script src="js/accesorios.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

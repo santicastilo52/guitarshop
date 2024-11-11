@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Guitar Shop</title>
+</head>
+<body onload="mostrarProductos(), mostrarAccesorios(), mostrarPromociones()">
+    <header id="header">
+        <div id="logo-img">
+            <a href="index.html"><img src="./img/guitarlogo.png" alt="logoguitar" id="header-img"></a>
+        </div>
+        <nav id="nav-bar">
+            <ul id="ul-nav">
+                <li><a href="index.html#bienvenida" class="nav-link">Inicio</a></li>
+                <li><a href="index.html#promociones" class="nav-link">Promociones</a></li>
+                <li><a href="index.html#catalogo" class="nav-link">Productos</a></li>
+                <li><a href="index.html#accesorios" class="nav-link">Accesorios</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                <li><a href="quienes-somos.html" class="nav-link">¿Quienes somos?</a></li>
+            </ul>
+        </nav>
+        <div id="carrito">
+            <img src="img/car.svg" id="img-carrito" alt="carrito">
+        </div>
+    </header>
+    <section id="quienes-somos">
+        <div class="contenedor-quienes">
+            <h1>¿Quienes Somos?</h1>
+            <p>
+                Bienvenido a Guitar Shop, tu destino definitivo para todos los amantes de la música y los entusiastas de las guitarras desde 1999. Fundada con pasión y experiencia, nuestra tienda ha estado sirviendo a la comunidad musical durante décadas. En Guitar Shop, nos enorgullecemos de ofrecer una amplia variedad de guitarras de alta calidad, desde clásicas hasta modernas, adecuadas para todos los estilos y niveles de habilidad.
+            </p>
+            <p> 
+                Nuestro dedicado equipo de expertos está aquí para ayudarte a encontrar la guitarra perfecta que se adapte a tus necesidades y preferencias. Ya seas un principiante emocionado por aprender a tocar o un músico experimentado en busca de tu próxima guitarra de ensueño, en Guitar Shop encontrarás una selección incomparable de marcas reconocidas y modelos exclusivos.
+            </p> 
+            <p>   
+                Además de guitarras, también ofrecemos una amplia gama de accesorios, amplificadores, efectos y equipo relacionado para potenciar tu sonido y llevar tu música al siguiente nivel. Nuestra tienda es un espacio acogedor donde los amantes de la música pueden reunirse, compartir experiencias y explorar el mundo de las guitarras.
+            </p> 
+            <p>   
+                En Guitar Shop, no solo vendemos guitarras; cultivamos pasión, inspiración y creatividad musical. Visítanos y déjate envolver por la magia de las guitarras en un ambiente amigable y profesional. Estamos comprometidos a brindarte una experiencia única y satisfactoria en cada visita. ¡Esperamos verte pronto en Guitar Shop, donde la música cobra vida!
+            </p>
+        </div>
+        
+    </section>
+     <!--modal-->
+     <div class="modal-overlay" id="modal-overlay"></div>
+     <div class="modal-container" id="modal-container"></div>
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="link">
+                <h3>Info</h3>
+                    <ul id="ul-footer">
+                        <li id="li-footer"><a href="quienes-somos.html">¿Quienes somos?</a></li>
+                        <li id="li-footer"><a href="contacto.html">Contacto</a></li>
+                    </ul>
+            </div>
+            <div class="link">
+                <h3>Sucursales</h3>
+                    <ul>
+                        <li id="li-footer">Buenos Aires</li>
+                        <li id="li-footer">Córdoba</li>
+                        <li id="li-footer">Mendoza</li>
+                        <li id="li-footer">Salta</li>
+                    </ul>
+            </div>
+            <div class="link">
+                <h3>Seguinos</h3>
+                    <ul>
+                        <li id="li-footer">
+                            <a href="https://www.facebook.com/" target="_blank" ><ion-icon name="logo-facebook"></ion-icon></a>
+                        </li>
+                        <li id="li-footer">
+                            <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        </li>
+                        <li id="li-footer">
+                            <a href="https://www.twitter.com/" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                        </li>
+                        <li id="li-footer">
+                            <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                        </li>
+                    </ul>
+            </div>
+        </div> 
+    </footer>
+    <script src="js/guitarras.js"></script>
+    <script src="js/accesorios.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
